@@ -50,7 +50,7 @@
       transition: background 0.4s ease, color 0.4s ease;
     }
 
-    /* ─── FONT ASSIGNMENTS ─── */
+    /* FONT ASSIGNMENTS */
     .hero-name, .section-title, .contact-big,
     .featured-title, .nav-logo, .footer-logo { font-family: 'Playfair Display', serif; }
     .hero-name { font-weight: 700; }
@@ -70,7 +70,7 @@
     .stat-num { font-family: 'Playfair Display', serif; font-weight: 700; }
     .nav-links a { font-weight: 500; }
 
-    /* ─── CURSOR (desktop only) ─── */
+    /* CURSOR (desktop only) */
     .cursor, .cursor-ring { display: none; }
     @media (hover: hover) and (pointer: fine) {
       body { cursor: none; }
@@ -94,7 +94,7 @@
       [data-theme="dark"] .cursor-ring { border-color: rgba(240,120,64,0.35); }
     }
 
-    /* ─── NAV ─── */
+    /* NAV */
     nav {
       position: fixed; top: 0; left: 0; right: 0;
       z-index: 500;
@@ -157,7 +157,7 @@
     }
     .mobile-nav a:hover { color: var(--gold); }
 
-    /* ─── THEME TOGGLE ─── */
+    /* THEME TOGGLE */
     .theme-toggle {
       background: none; border: 1px solid var(--border);
       cursor: pointer; width: 46px; height: 26px;
@@ -181,7 +181,7 @@
     [data-theme="dark"] .t-sun { opacity: 0; }
     [data-theme="dark"] .t-moon { opacity: 1; }
 
-    /* ─── HERO ─── */
+    /* HERO */
     #hero {
       min-height: 100vh;
       display: grid; grid-template-columns: 1fr 1fr;
@@ -291,7 +291,7 @@
       background: linear-gradient(to bottom, transparent, var(--border) 30%, var(--border) 70%, transparent);
     }
 
-    /* ─── SHARED ─── */
+    /* SHARED */
     .container { max-width: 1200px; margin: 0 auto; padding: 0 60px; }
     .section-label {
       font-size: 0.65rem; letter-spacing: 0.4em;
@@ -306,7 +306,7 @@
     }
     .section-title em { font-style: italic; color: var(--gold); }
 
-    /* ─── ABOUT ─── */
+    /* ABOUT */
     #about { padding: 140px 0; background: var(--bg2); transition: background 0.4s; }
     .about-grid {
       display: grid; grid-template-columns: 1fr 1fr;
@@ -346,7 +346,7 @@
       text-transform: uppercase; color: var(--muted); margin-top: 6px;
     }
 
-    /* ─── PROJECTS ─── */
+    /* PROJECTS */
     #projects { padding: 140px 0; background: var(--bg); transition: background 0.4s; }
     .projects-header {
       display: flex; justify-content: space-between;
@@ -416,7 +416,7 @@
       border-color: var(--gold-dim);
     }
 
-    /* ─── CONTACT ─── */
+    /* CONTACT */
     #contact { padding: 140px 0; background: var(--bg2); text-align: center; transition: background 0.4s; }
     .contact-inner { max-width: 700px; margin: 0 auto; }
     .contact-big {
@@ -437,7 +437,7 @@
     }
     .contact-link:hover { border-color: var(--gold); color: var(--gold); }
 
-    /* ─── FOOTER ─── */
+    /* FOOTER */
     footer {
       padding: 32px 60px; background: var(--bg);
       display: flex; justify-content: space-between; align-items: center;
@@ -451,7 +451,7 @@
       letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold);
     }
 
-    /* ─── ANIMATIONS ─── */
+    /* ANIMATIONS */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(30px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -465,7 +465,7 @@
     .reveal-delay-3 { transition-delay: 0.3s; }
     .reveal-delay-4 { transition-delay: 0.4s; }
 
-    /* ─── RESPONSIVE ─── */
+    /* RESPONSIVE */
 
     /* Tablet */
     @media (max-width: 1024px) {
@@ -623,12 +623,12 @@
             <p>
               I'm <strong>Arthur Baldosano Jr.</strong>, a BSIT student at
               <strong>Palawan State University</strong>, specializing in
-              <strong>Data Analytics & E-Commerce</strong>.
-              I currently serve as <strong>PSU-SITE President</strong> and run my own freelance IT work independently.
+              <strong>Data Analytics and E-Commerce</strong>.
+              I currently serve as <strong>PSU-SITE President</strong> and manage my own freelance IT practice independently.
             </p>
             <p>
-              I build websites, information systems, and digital tools — focused on creating things
-              that look sharp, work reliably, and solve real problems.
+              I build websites, information systems, and digital tools focused on clean design,
+              reliable performance, and practical solutions to real problems.
             </p>
           </div>
           <div class="skills-grid reveal reveal-delay-3">
@@ -637,7 +637,7 @@
             <div class="skill-item"><div class="skill-dot"></div>Data Analytics</div>
             <div class="skill-item"><div class="skill-dot"></div>E-Commerce</div>
             <div class="skill-item"><div class="skill-dot"></div>System Design</div>
-            <div class="skill-item"><div class="skill-dot"></div>Git & GitHub</div>
+            <div class="skill-item"><div class="skill-dot"></div>Git / GitHub</div>
             <div class="skill-item"><div class="skill-dot"></div>AI Integration</div>
             <div class="skill-item"><div class="skill-dot"></div>Student Leadership</div>
           </div>
@@ -667,24 +667,53 @@
       <div class="projects-header reveal">
         <div>
           <p class="section-label">Selected Work</p>
-          <h2 class="section-title">Projects &<br><em>Accomplishments</em></h2>
+          <h2 class="section-title">Projects and<br><em>Accomplishments</em></h2>
         </div>
         <p class="projects-header-right">
-          A curated collection of live systems, websites, and solutions — from thesis research and leadership to real freelance work and independent ventures.
+          A curated set of live systems, prototypes, and independent ventures spanning thesis research, student leadership, freelance delivery, and self-built platforms.
         </p>
       </div>
 
-      <!-- PROJECT 1: Faculty Workload -->
-      <div class="project-featured reveal">
+      <!-- PROJECT 1: IARMS Thesis (Primary Featured) -->
+      <div class="project-featured thesis-card reveal">
+        <div class="project-featured-img">
+          <img src="IARMS.png" alt="IARMS — Intelligent Academic Resource Management System" class="featured-screenshot" />
+        </div>
+        <div class="project-featured-content">
+          <p class="featured-badge">⭐ Primary Featured Project · Undergraduate Thesis</p>
+          <h3 class="featured-title">Intelligent Academic Resource Management System</h3>
+          <p class="featured-desc">
+            An AI-assisted academic platform designed for Palawan State University's College of IT.
+            Students and faculty upload documents and receive instant AI-generated summaries,
+            flashcards, quizzes, and key concept breakdowns. The prototype runs on a local LLM backend
+            using Ollama (Llama 3 / Mistral via FastAPI), with GPT-4o Mini API targeted for the production build.
+          </p>
+          <div style="display:flex; gap:10px; margin-bottom:32px; flex-wrap:wrap;">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Ollama LLM</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Prototype</span>
+            <span class="tag">Thesis</span>
+          </div>
+          <div class="featured-links">
+            <a href="https://abaldosano.github.io/PSU_AcadRes/" target="_blank" class="featured-link">View Prototype <span>→</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2: Faculty Workload -->
+      <div class="project-featured reveal reveal-delay-1">
         <div class="project-featured-img">
           <img src="fwb.png" alt="Faculty Workload Balancing System" class="featured-screenshot" />
         </div>
         <div class="project-featured-content">
-          <p class="featured-badge">⭐ Featured Project</p>
+          <p class="featured-badge">01 — Live Project</p>
           <h3 class="featured-title">Faculty Workload Balancing System</h3>
           <p class="featured-desc">
-            A web-based system designed to efficiently manage and distribute faculty workloads.
-            Built to solve a real institutional problem at PSU using modern web technologies.
+            A web-based system built to manage and distribute faculty workloads efficiently at PSU.
+            Designed to address a real institutional need, it helps administrators allocate teaching
+            loads fairly and transparently using straightforward web technologies.
           </p>
           <div style="display:flex; gap:10px; margin-bottom:32px; flex-wrap:wrap;">
             <span class="tag">HTML</span>
@@ -698,66 +727,18 @@
         </div>
       </div>
 
-      <!-- PROJECT 2: IARMS Thesis -->
-      <div class="project-featured thesis-card reveal reveal-delay-1">
-        <div class="project-featured-img">
-          <img src="IARMS.png" alt="IARMS — Intelligent Academic Resource Management System" class="featured-screenshot" />
-        </div>
-        <div class="project-featured-content">
-          <p class="featured-badge">🎓 Undergraduate Thesis</p>
-          <h3 class="featured-title">Intelligent Academic Resource Management System</h3>
-          <p class="featured-desc">
-            AI-powered thesis platform built for PSU's College of IT. Students and faculty can upload documents
-            and instantly receive AI-generated summaries, flashcards, quizzes, and key concept breakdowns —
-            powered by a local LLM backend (Llama 3 / Mistral via Ollama and FastAPI).
-          </p>
-          <div style="display:flex; gap:10px; margin-bottom:32px; flex-wrap:wrap;">
-            <span class="tag">Python</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">Ollama LLM</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Thesis</span>
-          </div>
-          <div class="featured-links">
-            <a href="https://abaldosano.github.io/PSU_AcadRes/" target="_blank" class="featured-link">View Prototype <span>→</span></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- PROJECT 3: Buzy Reviewer -->
+      <!-- PROJECT 3: Affiliate Commerce Platform -->
       <div class="project-featured reveal reveal-delay-2">
         <div class="project-featured-img">
-          <img src="br.png" alt="Buzy Reviewer" class="featured-screenshot" />
-        </div>
-        <div class="project-featured-content">
-          <p class="featured-badge">01 — Live Project</p>
-          <h3 class="featured-title">Buzy Reviewer</h3>
-          <p class="featured-desc">
-            An interactive reviewer web app built entirely from scratch and deployed live on GitHub Pages.
-          </p>
-          <div style="display:flex; gap:10px; margin-bottom:32px; flex-wrap:wrap;">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-          </div>
-          <div class="featured-links">
-            <a href="https://abaldosano.github.io/Buzy-Reviewer/index.html" target="_blank" class="featured-link">Live Demo <span>→</span></a>
-            <a href="https://github.com/ABaldosano" target="_blank" class="featured-link" style="opacity:0.6;">GitHub <span>→</span></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- PROJECT 4: Affiliate Commerce Platform -->
-      <div class="project-featured reveal reveal-delay-3">
-        <div class="project-featured-img">
-          <img src="pinned.png" alt="Affiliate Commerce Platform" class="featured-screenshot" />
+          <img src="pinned.png" alt="PinnedPicks Affiliate Commerce Platform" class="featured-screenshot" />
         </div>
         <div class="project-featured-content">
           <p class="featured-badge">02 — Live Business</p>
-          <h3 class="featured-title">Affiliate Commerce Platform</h3>
+          <h3 class="featured-title">PinnedPicks Affiliate Platform</h3>
           <p class="featured-desc">
-            A fully independent, live affiliate e-commerce platform — designed, built, and managed from scratch.
-            Curates hand-picked products across major online marketplaces with a multi-channel audience strategy.
+            A fully independent affiliate e-commerce platform, designed and managed from the ground up.
+            Curates hand-picked products across major online marketplaces with a multi-channel
+            audience strategy built to drive consistent traffic and conversions.
           </p>
           <div style="display:flex; gap:10px; margin-bottom:32px; flex-wrap:wrap;">
             <span class="tag">E-Commerce</span>
@@ -771,16 +752,41 @@
         </div>
       </div>
 
+      <!-- PROJECT 4: Buzy Reviewer -->
+      <div class="project-featured reveal reveal-delay-3">
+        <div class="project-featured-img">
+          <img src="br.png" alt="Buzy Reviewer" class="featured-screenshot" />
+        </div>
+        <div class="project-featured-content">
+          <p class="featured-badge">03 — Live Project</p>
+          <h3 class="featured-title">Buzy Reviewer</h3>
+          <p class="featured-desc">
+            An interactive study reviewer built entirely from scratch and deployed live on GitHub Pages.
+            Designed to help students study effectively with a clean, distraction-free interface.
+          </p>
+          <div style="display:flex; gap:10px; margin-bottom:32px; flex-wrap:wrap;">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="featured-links">
+            <a href="https://abaldosano.github.io/Buzy-Reviewer/index.html" target="_blank" class="featured-link">Live Demo <span>→</span></a>
+            <a href="https://github.com/ABaldosano" target="_blank" class="featured-link" style="opacity:0.6;">GitHub <span>→</span></a>
+          </div>
+        </div>
+      </div>
+
       <!-- PROJECT 5: Google Sites (Paid) -->
       <div class="project-featured reveal reveal-delay-4">
         <div class="project-featured-img">
           <img src="schoolsite.png" alt="Class and School Website" class="featured-screenshot" />
         </div>
         <div class="project-featured-content">
-          <p class="featured-badge">03 — Freelance · <span class="paid-badge">✦ Paid</span></p>
-          <h3 class="featured-title">Class & School Website</h3>
+          <p class="featured-badge">04 — Freelance · <span class="paid-badge">✦ Paid</span></p>
+          <h3 class="featured-title">Class and School Website</h3>
           <p class="featured-desc">
-            Freelance client project — designed and delivered a complete class & school website using Google Sites for a paying client.
+            A complete class and school website delivered for a paying client using Google Sites.
+            Covers all required content areas with clear navigation, organized layout, and a professional finish suited for an academic audience.
           </p>
           <div style="display:flex; gap:10px; margin-bottom:32px; flex-wrap:wrap;">
             <span class="tag">Freelance</span>
@@ -804,8 +810,8 @@
           <p class="section-label" style="justify-content:center;">Let's Connect</p>
           <h2 class="contact-big">Have a project<br>in <em>mind?</em></h2>
           <p class="contact-sub">
-            Open to freelance work, collaborations, and opportunities.<br>
-            Based in Puerto Princesa, Palawan — available remotely.
+            Open to freelance work, collaborations, and new opportunities.<br>
+            Based in Puerto Princesa, Palawan, and available remotely.
           </p>
         </div>
         <div class="contact-links reveal reveal-delay-1">
@@ -829,7 +835,7 @@
   <!-- FOOTER -->
   <footer>
     <span class="footer-logo">Arthur Baldosano Jr.</span>
-    <p>© 2025 — Designed & Built by Arthur Baldosano Jr.</p>
+    <p>© 2025 — Designed and Built by Arthur Baldosano Jr.</p>
     <p>Puerto Princesa, Palawan, Philippines</p>
   </footer>
 
